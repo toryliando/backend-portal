@@ -1,0 +1,19 @@
+{
+  "name": "portal-investidor-backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:api": "npm run dev -w @portal/api",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "format": "prettier --write ."
+  }
+}
